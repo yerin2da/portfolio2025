@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -26,15 +28,15 @@
 				<section id="main">
 					<div class="container">
 						<div class="row">
-							<div class="col-12">
+							<div class="col-12 py-16">
 
 								<!-- Portfolio -->
 									<section>
-										<header class="major">
+										<header class="major py-16">
 											<h2>My Portfolio</h2>
 										</header>
 										<div class="row">
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="100">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 													<header>
@@ -49,7 +51,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="150">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 													<header>
@@ -65,7 +67,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="200">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 													<header>
@@ -81,7 +83,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="250">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 													<header>
@@ -97,7 +99,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="300">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 													<header>
@@ -113,7 +115,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="350">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 													<header>
@@ -129,7 +131,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="400">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
 													<header>
@@ -145,7 +147,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="450">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 													<header>
@@ -161,7 +163,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="500">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
 													<header>
@@ -177,7 +179,7 @@
 													</footer>
 												</section>
 											</div>
-											<div class="col-4 col-6-medium col-12-small">
+											<div class="col-4 col-6-medium col-12-small" data-aos="fade-up" data-aos-delay="550">
 												<section class="box">
 													<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
 													<header>
@@ -271,6 +273,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				AOS.init();
+				AOS.init({
+					duration: 500,    // 애니메이션 지속 시간 (ms)
+					once: false,       // 한 번만 실행
+					offset: 120,      // 트리거 포인트 오프셋(px)
+				});
+			</script>
 	</body>
 </html>
